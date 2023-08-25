@@ -2,6 +2,7 @@ from connect_mongodb import collection,client
 from bs4 import BeautifulSoup
 import re
 import csv
+import matplotlib.pyplot as plt
 
 def find_origin():
     pipe_line = [
@@ -48,6 +49,16 @@ def find_origin():
 
     sorted_data = dict(sorted(clear_data.items(), key=lambda item: item[1], reverse=True))
     top_20 = {k: sorted_data[k] for k in list(sorted_data)[:20]}
+
+    keys = list(top_20.keys())
+    values = list(top_20.values())
+    plt.bar(keys, values)
+
+    plt.xlabel('Tên')
+    plt.ylabel('Số Lượng')
+    plt.title('Biểu đồ số lượng theo tên')
+    plt.xticks(rotation=90)
+    plt.show()
     print(top_20)
 
 def top_10_sold_out():
@@ -130,9 +141,21 @@ def count_description():
 
 if __name__ == "__main__":
     pass
-    # top_10_sold_out()
-    # top_10_rating()
-    # find_origin()
-    # count_description()
+    while True:
+        print("Choose option:")
+        print("1. Thống kê xuất xứ các sản phẩm.")
+        print("2. Top 10 sản phầm giá thấp và bán chạy nhất")
+        print("3. Top 10 sản phầm có rating cao nhất")
+        option_choose = int(input())
+        if option_choose == 1:
+            print("Please wait a sec!")
+            find_origin()
+        if option_choose == 2:
+            print("Please wait a sec!")
+            top_10_sold_out()
+        if option_choose == 3:
+            print("Please wait a sec!")
+            top_10_rating()
+
 
 

@@ -23,7 +23,7 @@ result = collection.aggregate(pipeline=pipeline)
 
 distinct_ids = [item["_id"] for item in result]
 checkk = len(distinct_ids)
-# print(checkk)
+
 for _id in distinct_ids:
     print(checkk)
     documents_to_delete = collection.find({"id": _id})

@@ -126,15 +126,13 @@ def count_description():
             with open('data_tp.csv', 'a', encoding='utf-8', newline='') as csvfile:
                 csvwriter = csv.writer(csvfile)
                 csvwriter.writerow(final_data)
-        # print(data_tp)
-        # print(final_data)
-        # if check == 5:
-        #     break
+
 
 if __name__ == "__main__":
+    pass
     # top_10_sold_out()
     # top_10_rating()
     # find_origin()
-    count_description()
+    # count_description()
 
 

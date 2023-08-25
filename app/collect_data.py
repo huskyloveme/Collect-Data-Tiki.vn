@@ -13,7 +13,6 @@ def list_product_id():
     list_cates_cl = df["LEAF_CAT_ID"]
     convert_list_cates_cl = list_cates_cl.apply(lambda x: re.sub(r'[^\d.]', '', str(x)))
     list_cates = convert_list_cates_cl.to_list()
-    # print(list_cates)
     return list_cates
 
 def craw_product(name_file):
@@ -25,9 +24,6 @@ def craw_product(name_file):
             count += 1
             check = 1
             product_id = str(line)
-            # if product_id == '200802417\n' and name_file == 'list_id_1':
-            #     check = 1
-
             if check == 1:
                 url_res = 'https://tiki.vn/api/v2/products/{}'.format(product_id)
                 header_res = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36'}

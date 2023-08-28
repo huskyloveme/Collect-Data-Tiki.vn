@@ -1,9 +1,4 @@
-from pymongo import MongoClient
-
-# Kết nối đến MongoDB
-client = MongoClient("mongodb://localhost:27017/")
-db = client["project4"]
-collection = db["products"]
+from connect_mongodb import collection,client
 
 pipeline = [
     {

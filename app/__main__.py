@@ -1,6 +1,5 @@
 from connect_mongodb import collection,client
 from bs4 import BeautifulSoup
-import re
 import csv
 import matplotlib.pyplot as plt
 

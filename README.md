@@ -40,3 +40,4 @@ Chúc may mắn 😄
 RUN PROJECT
 
 cmd: py app
+

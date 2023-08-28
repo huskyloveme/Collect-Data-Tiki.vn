@@ -52,7 +52,6 @@ def craw_product(name_file):
                     print('COUNT: {} | {}'.format(count,name_file))
 
 
-craw_product("product_id_4")
 
 
 

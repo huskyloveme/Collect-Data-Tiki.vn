@@ -139,7 +139,6 @@ def count_description():
 
 
 if __name__ == "__main__":
-    pass
     while True:
         print("Choose option:")
         print("1. Thống kê xuất xứ các sản phẩm.")

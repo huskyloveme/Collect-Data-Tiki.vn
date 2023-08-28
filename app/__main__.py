@@ -145,6 +145,7 @@ if __name__ == "__main__":
         print("1. Thống kê xuất xứ các sản phẩm.")
         print("2. Top 10 sản phầm giá thấp và bán chạy nhất")
         print("3. Top 10 sản phầm có rating cao nhất")
+        print("4. Th")
         option_choose = int(input())
         if option_choose == 1:
             print("Please wait a sec!")
@@ -155,5 +156,6 @@ if __name__ == "__main__":
         if option_choose == 3:
             print("Please wait a sec!")
             top_10_rating()
-
+        if option_choose == 4:
+            break
 

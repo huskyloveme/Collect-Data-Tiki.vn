@@ -1,7 +1,3 @@
-# Project 04
-
-**Yêu cầu bắt buộc**: 
-
 1. Lấy **toàn bộ** sản phẩm đang hiển thị trên các danh mục của website tiki.vn. Dữ liệu lấy về sẽ lưu trong MongoDB
 2. Tạo một bản sao lưu data gửi cho Coach để có thể Restore dữ liệu trên một hệ thống MongoDB khác
 3. Trích xuất các trường thông tin sau và lưu vào MySQL để cho team khác sử dụng:
@@ -35,7 +31,7 @@ Yêu cầu bổ sung:
 
 [**Gợi ý nếu bạn gặp khó khăn**](https://www.notion.so/G-i-n-u-b-n-g-p-kh-kh-n-978389be1de8482c930984d0ffe30dbb?pvs=21)
 
-Chúc may mắn 😄
+
 
 RUN PROJECT
 

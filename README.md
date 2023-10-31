@@ -1,10 +1,6 @@
 # Project 04
 
-**Flow Project**: 
-
-![img.png](img.png)
-
-**Project Description**: 
+**Yêu cầu bắt buộc**: 
 
 1. Lấy **toàn bộ** sản phẩm đang hiển thị trên các danh mục của website tiki.vn. Dữ liệu lấy về sẽ lưu trong MongoDB
 2. Tạo một bản sao lưu data gửi cho Coach để có thể Restore dữ liệu trên một hệ thống MongoDB khác
@@ -26,8 +22,23 @@
 Lưu ý, chỉ trích chọn ra thông tin miêu tả “Thành phần” trong Description, những thông tin khác không lấy. Thời gian truy vấn ra các sản phẩm có “Thành phần” trong Description phải nhanh nhất có thể
 6. Đưa ra idea cho leader về việc mình có thể làm gì tiếp theo với những dữ liệu này
 
-   
-**Run Project**:
+Yêu cầu bổ sung:
+
+1. Download **toàn bộ** ảnh ở “base_url” của các sản phẩm trong danh mục “Thời trang nam” và “Thời trang nữ” về lưu trong ổ cứng (mỗi sản phẩm có từ 3-5 ảnh). Format tên ảnh: productID_number. Ví dụ tên ảnh thứ nhất của sản phẩm 180001095 sẽ là 180001095_1.png. Thông tin đường dẫn ảnh của mỗi product được ghi thêm vào MySQL
+2. Change data capture - CDC data từ MongoDB sang MySQL, bất kỳ thông tin được thêm sửa xoá ở MongoDB sẽ được capture sang MySQL. 
+    
+    Hướng dẫn: Tự nghiên cứu và thiết kế luồng dữ liệu theo keyword CDC hoặc sử dụng một third party như Debezium hoặc Estuary
+    
+3. Viết Procedure trong MySQL để tự động tính và tạo ra thêm cột
+    1. Thông tin tổng số tiền bán được của một sản phẩm 
+    2. Ngày tháng năm sản phẩm đó được tạo ra
+
+[**Gợi ý nếu bạn gặp khó khăn**](https://www.notion.so/G-i-n-u-b-n-g-p-kh-kh-n-978389be1de8482c930984d0ffe30dbb?pvs=21)
+
+Chúc may mắn 😄
+
+RUN PROJECT
 
 cmd: py app
 
+![img.png](img.png)
